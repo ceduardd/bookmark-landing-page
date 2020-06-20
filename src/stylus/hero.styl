@@ -16,7 +16,7 @@
     background-color var(--softBlue)
     // bottom: 20%
     bottom: 0
-    right -2em
+    right -1em
     z-index: -1
   @media screen and (min-width: 1024px)
     text-align left
@@ -32,5 +32,7 @@
       position relative
       top 50px
       text-align: center
+    &-imageContainer::before
+      right -2em
     &-content
       grid-area: content
