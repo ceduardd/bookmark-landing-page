@@ -121,6 +121,20 @@
 .hero-buttons {
   padding-top: 1em;
 }
+.hero-imageContainer {
+  position: relative;
+}
+.hero-imageContainer::before {
+  position: absolute;
+  content: '';
+  width: 70%;
+  height: 70%;
+  border-bottom-left-radius: 30%;
+  background-color: var(--softBlue);
+  bottom: 0;
+  right: -2em;
+  z-index: -1;
+}
 @media screen and (min-width: 1024px) {
   .hero {
     text-align: left;
@@ -148,6 +162,7 @@
 }
 .tabs-link {
   border-bottom: 1px solid var(--grayishBlue);
+  cursor: pointer;
 }
 .tabs-content {
   display: none;

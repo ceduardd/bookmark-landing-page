@@ -5,6 +5,19 @@
     max-width 100%
   &-buttons
     padding-top 1em
+  &-imageContainer
+    position relative
+  &-imageContainer::before
+    position: absolute
+    content: ''
+    width: 70%
+    height 70%
+    border-bottom-left-radius: 30%
+    background-color var(--softBlue)
+    // bottom: 20%
+    bottom: 0
+    right -2em
+    z-index: -1
   @media screen and (min-width: 1024px)
     text-align left
     padding 1em 0
